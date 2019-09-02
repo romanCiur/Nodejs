@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%= title %></title>
+    <% include partials/head.html %>
+</head>
+<body>
+<div data-spy="scroll" data-target="#barra">
+    <% include partials/navigation.html %>
+</div>
+    <main class="container-fluid d-flex align-items-center" id="inicio">
+        <div class="container animated fadeIn">
+        <section class="row rounded px-md-2 py-4 ">
+                <article class="col-11 col-sm-12">
+                    <h1>ALINEAR IMÁGENES</h1>
+                    <p>Utilizando flexbox & grid</p>
+                </article>
+            </section>
+        </div>
+    </main>
+    <% include partials/footer.html %>
+</body>
+</html>

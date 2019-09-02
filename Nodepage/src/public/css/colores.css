@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+    background: whitesmoke;  /*fallback for old browsers */
+    /* background: -webkit-linear-gradient(to left, #f7797d, #FBD786, #C6FFDD);  Chrome 10-25, Safari 5.1-6 */
+    /* background: linear-gradient(to left, #f7797d, #FBD786, #C6FFDD); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#inicio{
+    /* min-height: 100vh; */
+    height: 100vh;
+    background: url('/images/black-and-white.jpg') no-repeat;
+    background-size:cover;
+    object-fit: cover;
+    font-family: 'Varela', sans-serif;
+}
+#inicio section{
+    background: rgba(245, 245, 245, 0.9);
+}
+#inicio section article{
+    letter-spacing: 2px;
+}
+footer{
+    margin-top: auto;
+    font-family: 'Tajawal', sans-serif;
+}

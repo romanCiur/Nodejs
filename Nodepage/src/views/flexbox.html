@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Node website</title>
+    <link rel="stylesheet" href="css/flexbox.css">
+    <% include partials/head.html%>
+</head>
+<body>
+    <% include partials/navigation.html %>
+    <header class="cajatitle">
+        <h2 class="title">Hecho con FLEXBOX</h2>
+    </header>
+    <main id="boxflex">
+
+    	<div class="big animated zoomIn"><img src="images/paisaje1.jpg" alt=""></div>
+    	<div class="normal animated zoomIn"><img src="images/paisaje2.jpg" alt=""></div>
+    	<div class="big animated zoomIn"><img src="images/paisaje3.jpg" alt=""></div>
+    	<div class="normal animated zoomIn"> <img src="images/slideshow2.jpg" alt=""></div>
+    	<div class="big animated zoomIn"><img src="images/paisaje4.jpg" alt=""></div>
+    	<div class="normal animated zoomIn"><img src="images/paisaje3.jpg" alt=""></div>
+    	<div class="big animated zoomIn"><img src="images/paisaje2.jpg" alt=""></div>
+    	<div class="big animated zoomIn"><img src="images/slideshow1.jpg" alt=""></div>
+    	<div class="normal animated zoomIn"> <img src="images/slideshow2.jpg" alt=""></div>
+    	<picture class="big animated zoomIn">
+    		<img src="images/paisaje4.jpg" alt="">
+    	</picture>
+    	
+    </main>
+    <% include partials/footer.html%>
+</body>
+</html>
