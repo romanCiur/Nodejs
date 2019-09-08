@@ -1,0 +1,42 @@
+extends layout
+
+block content
+  nav#mainNav.navbar.navbar-expand-lg.navbar-dark.py-lg-4
+    .container
+      a.navbar-brand.text-uppercase.text-expanded.font-weight-bold.d-lg-none(href='/') Start Bootstrap
+      button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarResponsive' aria-controls='navbarResponsive' aria-expanded='false' aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #navbarResponsive.collapse.navbar-collapse
+        ul.navbar-nav.mx-auto
+          li.nav-item.px-lg-4
+            a.nav-link.text-uppercase.text-expanded(href='/')
+              | Home
+              span.sr-only (current)
+          li.nav-item.px-lg-4
+            a.nav-link.text-uppercase.text-expanded(href='/about') About
+          li.nav-item.px-lg-4
+            a.nav-link.text-uppercase.text-expanded(href='/products') Products
+          li.nav-item.px-lg-4
+            a.nav-link.text-uppercase.text-expanded(href='/store') Store
+  section.page-section.about-heading
+  .container
+    img.img-fluid.rounded.about-heading-img.mb-3.mb-lg-0(src='/images/about.jpg' alt='')
+    .about-heading-content
+      .row
+        .col-xl-9.col-lg-10.mx-auto
+          .bg-faded.rounded.p-5
+            h2.section-heading.mb-4
+              span.section-heading-upper Strong Coffee, Strong Roots
+              span.section-heading-lower About Our Cafe
+            p
+              | Founded in 1987 by the Hernandez brothers, our establishment has been serving up rich coffee sourced from artisan farmers in various regions of South and Central America. We are dedicated to travelling the world, finding the best coffee, and bringing back to you here in our cafe.
+            p.mb-0
+              | We guarantee that you will fall in 
+              em lust
+              |  with our decadent blends the moment you walk inside until you finish your last sip. Join us for your daily routine, an outing with friends, or simply just to enjoy some alone time.
+  footer.footer.text-faded.text-center.py-5
+    .container
+      p.m-0.small Copyright &copy; Your Website 2019
+  //- // Bootstrap core JavaScript
+  script(src='/vendor/jquery/jquery.min.js')
+  script(src='/vendor/bootstrap/js/bootstrap.bundle.min.js')

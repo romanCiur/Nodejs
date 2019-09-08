@@ -1,0 +1,83 @@
+extends layout
+
+block content
+  nav#mainNav.navbar.navbar-expand-lg.navbar-dark.py-lg-4
+    .container
+      a.navbar-brand.text-uppercase.text-expanded.font-weight-bold.d-lg-none(href='#') Start Bootstrap
+      button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarResponsive' aria-controls='navbarResponsive' aria-expanded='false' aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #navbarResponsive.collapse.navbar-collapse
+        ul.navbar-nav.mx-auto
+          li.nav-item.px-lg-4
+            a.nav-link.text-uppercase.text-expanded(href='/')
+              | Home
+              span.sr-only (current)
+          li.nav-item.px-lg-4
+            a.nav-link.text-uppercase.text-expanded(href='/about') About
+          li.nav-item.px-lg-4
+            a.nav-link.text-uppercase.text-expanded(href='/products') Products
+          li.nav-item.px-lg-4
+            a.nav-link.text-uppercase.text-expanded(href='/store') Store
+  section.page-section.cta
+    .container
+      .row
+        .col-xl-9.mx-auto
+          .cta-inner.text-center.rounded
+            h2.section-heading.mb-5
+              span.section-heading-upper Come On In
+              span.section-heading-lower We&apos;re Open
+            ul.list-unstyled.list-hours.mb-5.text-left.mx-auto
+              li.list-unstyled-item.list-hours-item.d-flex
+                | Sunday
+                span.ml-auto Closed
+              li.list-unstyled-item.list-hours-item.d-flex
+                | Monday
+                span.ml-auto 7:00 AM to 8:00 PM
+              li.list-unstyled-item.list-hours-item.d-flex
+                | Tuesday
+                span.ml-auto 7:00 AM to 8:00 PM
+              li.list-unstyled-item.list-hours-item.d-flex
+                | Wednesday
+                span.ml-auto 7:00 AM to 8:00 PM
+              li.list-unstyled-item.list-hours-item.d-flex
+                | Thursday
+                span.ml-auto 7:00 AM to 8:00 PM
+              li.list-unstyled-item.list-hours-item.d-flex
+                | Friday
+                span.ml-auto 7:00 AM to 8:00 PM
+              li.list-unstyled-item.list-hours-item.d-flex
+                | Saturday
+                span.ml-auto 9:00 AM to 5:00 PM
+            p.address.mb-5
+              em
+                strong 1116 Orchard Street
+                br
+                | Golden Valley, Minnesota
+            p.mb-0
+                em Call Anytime
+                small
+                br
+                | (317) 585-8468
+  section.page-section.about-heading
+        .container
+          img.img-fluid.rounded.about-heading-img.mb-3.mb-lg-0(src='images/about.jpg' alt='')
+          .about-heading-content
+            .row
+              .col-xl-9.col-lg-10.mx-auto
+                .bg-faded.rounded.p-5
+                  h2.section-heading.mb-4
+                    span.section-heading-upper Strong Coffee, Strong Roots
+                    span.section-heading-lower About Our Cafe
+                  p
+                    | Founded in 1987 by the Hernandez brothers, our establishment has been serving up rich coffee sourced from artisan farmers in various regions of South and Central America. We are dedicated to travelling the world, finding the best coffee, and bringing back to you here in our cafe.
+                  p.mb-0
+                    | We guarantee that you will fall in
+                    em lust
+                    | with our decadent blends the moment you walk inside until you finish your last sip. Join us for your daily routine, an outing with friends, or simply just to enjoy some alone time.
+  
+  footer.footer.text-faded.text-center.py-5
+    .container
+      p.m-0.small Copyright &copy; Your Website 2019
+  //- // Bootstrap core JavaScript
+  script(src='/vendor/jquery/jquery.min.js')
+  script(src='/vendor/bootstrap/js/bootstrap.bundle.min.js')
